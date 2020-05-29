@@ -1,29 +1,11 @@
 # sandbox
 
-## Project setup
-```
-yarn install
-```
+Run `yarn build --target lib`
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+Expected:
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+`public-images/public-image.png` is copied over to the `dist/` folder, just as running `vue-cli-service build` without a `target` argument does.
 
-### Run your tests
-```
-yarn run test
-```
+Result:
 
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Nothing in the `public` directory is copied
